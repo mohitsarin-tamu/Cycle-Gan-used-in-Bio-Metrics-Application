@@ -6,3 +6,28 @@ networks (GANs) work and implement the same to some bio-metrics
 dataset of finger , plam and the techniques used to make it better. We
 were trying to make a new type of model which can distinguish better pairs
 of images of bio-metrics data of two different persons.
+
+
+Prerequisites:
+tensorflow r1.1
+numpy 1.11.0
+scipy 0.17.0
+pillow 3.3.0
+
+
+Train a model:
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=horse2zebra
+Use tensorboard to visualize the training details:
+tensorboard --logdir=./logs
+Test
+Finally, test the model:
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=horse2zebra --phase=test --which_direction=AtoB
+Training and Test Details
+To train a model,
+
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ 
+Models are saved to ./checkpoints/ (can be changed by passing --checkpoint_dir=your_dir).
+
+To test the model,
+
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test --which_direction=AtoB/BtoA
