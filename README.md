@@ -7,6 +7,8 @@ dataset of finger , plam and the techniques used to make it better. We
 were trying to make a new type of model which can distinguish better pairs
 of images of bio-metrics data of two different persons.
 
+Divide datasets as Train A and Train B , Test A and Test B accordingly.
+
 
 Prerequisites:
 tensorflow r1.1
