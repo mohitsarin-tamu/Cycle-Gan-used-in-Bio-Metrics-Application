@@ -8,6 +8,8 @@ were trying to make a new type of model which can distinguish better pairs
 of images of bio-metrics data of two different persons.
 
 Divide datasets as Train A and Train B , Test A and Test B accordingly.
+Datasets are stored in horse2zebra folder as Train A , Train B , Test A , Test B.
+Checkpoints will be made and saved accordingly.
 
 
 Prerequisites:
